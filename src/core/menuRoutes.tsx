@@ -1,5 +1,7 @@
 import React from "react";
 import UserForm from "../modules/user/UserForm";
+import ProductTable from "../modules/product/ProductTable";
+import OrderTable from "../modules/order/OrderTable";
 
 export interface AppRoute {
     path: string;
@@ -27,14 +29,14 @@ const routes: AppRoute[] = [
 
     {
        path: '/products',
-       element: <UserForm />,
+       element: <ProductTable />,
        label: 'Products',
        icon: 'UserOutlined' 
     },
 
     {
         path: '/orders',
-        element: <UserForm />,
+        element: <OrderTable />,
         label: 'Orders',
         icon: 'ShoppingCartOutlined'
     },

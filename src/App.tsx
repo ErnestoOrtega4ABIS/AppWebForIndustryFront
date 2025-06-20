@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 import UserForm from './modules/user/UserForm';
+import UserTable from './modules/user/UserTable';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -44,6 +45,7 @@ function App() {
       </p>
 
       <UserForm />
+      <UserTable />
     </>
   );
 }
